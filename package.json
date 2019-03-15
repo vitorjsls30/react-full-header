@@ -1,7 +1,7 @@
 {
-  "name": "lyef-react-component",
-  "version": "1.1.2",
-  "description": "An opinionated boilerplate for reusable and declouped react components.",
+  "name": "react-full-header",
+  "version": "0.0.1",
+  "description": "A full header component creted with React.",
   "main": "dist/Main.js",
   "scripts": {
     "build": "npm run clean && npm run babel && npm run minify",
