@@ -1,7 +1,10 @@
 import React from 'react';
-import { expect } from 'chai';
+import chai, { expect } from 'chai';
+import chaiEnzyme from 'chai-enzyme';
 import { shallow } from 'enzyme';
 import FullHeader from '../../src/Main';
+
+chai.use(chaiEnzyme());
 
 describe('<FullHeader />', () => {
 
@@ -43,5 +46,12 @@ describe('<FullHeader />', () => {
       expect(wrapper.find('h2').props().children).to.be.equal('Curso');
     });
 
+  });
+
+  context('bgColor', () => {
+    it('should have background-color equal to #ccc when none is passed', () => {
+      const wrapper = shallow(<FullHeader title="TDD" />);
+      expect(wrapper).to.have.style('background-color').equal('#ccc');
+    })
   });
 });
