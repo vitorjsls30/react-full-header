@@ -28,19 +28,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lyef/lyef-react-component.git"
+    "url": "git+ssh://git@github.com:vitorjsls30/react-full-header.git"
   },
   "keywords": [
     "react",
     "component",
     "base"
   ],
-  "author": "lyef (http://lyef.github.io/)",
+  "author": "Vitor Sacramento (https://github.com/vitorjsls30)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lyef/lyef-react-component/issues"
-  },
-  "homepage": "https://github.com/lyef/lyef-react-component#README",
   "devDependencies": {
     "@personare/react-storybook-decorator-github-corner": "^0.1.4",
     "@storybook/react": "^3.1.5",

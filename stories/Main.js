@@ -49,7 +49,7 @@ storiesOf('FullHeader', module)
       subtitle="JS with TDD Course"
       bgColor="#EBE9EB"
       textColor="#3299BB"
-      video="http://callmenick.com/_development/video/full-screen-background-video/media/demo.mp4"
+      video="http://teragigame.ga/files/madcowfilms.webm"
     />
   ))
   
