@@ -1,22 +1,29 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import Component from '../../src/Main';
+import FullHeader from '../../src/Main';
 
-describe('Component Hello', () => {
-   it('should have h1 to display the Hello', () => {
-       const wrapper = shallow(<Component name='lyef' />);
-       expect(wrapper.find('h1')).to.have.length(1);
-   });
+describe('<FullHeader />', () => {
 
-    it('should have props for name', () => {
-        const wrapper = shallow(<Component name='lyef' />);
-        expect(wrapper.props().name).to.be.defined;
-    });
+  it('should have header tag when mount', () => {
+    const wrapper = shallow(<FullHeader />);
+    expect(wrapper.find('header')).to.have.length(1);
+  });
 
-    it('should create a correct DOM structure', () => {
-        const wrapper = shallow(<Component name='lyef' />);
-        const componentMock = shallow(<h1>Hello lyef!</h1>);
-        expect(wrapper.html()).to.be.equal(componentMock.html());
-    });
+  it('should have h1 tag when title is passed', () => {
+    const wrapper = shallow(<FullHeader title="TDD" />);
+    expect(wrapper.find('h1')).to.have.length(1);
+  });
+
+  it('should not have h1 tag when title is not passed', () => {
+    const wrapper = shallow(<FullHeader />);
+    expect(wrapper.find('h1')).to.have.length(0);
+  });
+
+  it('should have h1 tag with the title passed', () => {
+    const wrapper = shallow(<FullHeader title="TDD"/>);
+    console.log('YO', wrapper.find('h1').props().children);
+    // expect(wrapper.find('h1')).to.have.length(0);
+  });
+
 });
