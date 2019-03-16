@@ -78,9 +78,21 @@ describe('<FullHeader />', () => {
       expect(wrapper).to.have.style('font-family').equal('sans-serif');
     });
 
-    it('should have color equal to open-sans when font-family is passed', () => {
+    it('should have font-family equal to open-sans when font-family is passed', () => {
       const wrapper = shallow(<FullHeader title="TDD" font="open-sans"/>);
       expect(wrapper).to.have.style('font-family').equal('open-sans');
+    });
+  });
+
+  context('bgImg', () => {
+    it('should have background-image equal to empty when none is passed', () => {
+      const wrapper = shallow(<FullHeader />);
+      expect(wrapper).to.have.style('background-image').equal('url()');
+    });
+
+    it('should have background-image equal to bg.jpg when passed', () => {
+      const wrapper = shallow(<FullHeader bgImg="bg.jpg"/>);
+      expect(wrapper).to.have.style('background-image').equal('url(bg.jpg)');
     });
   });
 });
