@@ -54,9 +54,33 @@ describe('<FullHeader />', () => {
       expect(wrapper).to.have.style('background-color').equal('#ccc');
     });
 
-    it('should have background-color equal to #000 when #000 is passed', () => {
+    it('should have background-color equal to #000 when bgColor is passed', () => {
       const wrapper = shallow(<FullHeader title="TDD" bgColor="#000"/>);
       expect(wrapper).to.have.style('background-color').equal('#000');
+    });
+  });
+
+  context('textColor', () => {
+    it('should have background-color equal to #fff when none is passed', () => {
+      const wrapper = shallow(<FullHeader title="TDD" />);
+      expect(wrapper).to.have.style('color').equal('#fff');
+    });
+
+    it('should have color equal to #ff0000 when textColor is passed', () => {
+      const wrapper = shallow(<FullHeader title="TDD" textColor="#ff0000"/>);
+      expect(wrapper).to.have.style('color').equal('#ff0000');
+    });
+  });
+
+  context('font', () => {
+    it('should have font-family equal to sans-serif when none is passed', () => {
+      const wrapper = shallow(<FullHeader title="TDD" />);
+      expect(wrapper).to.have.style('font-family').equal('sans-serif');
+    });
+
+    it('should have color equal to open-sans when font-family is passed', () => {
+      const wrapper = shallow(<FullHeader title="TDD" font="open-sans"/>);
+      expect(wrapper).to.have.style('font-family').equal('open-sans');
     });
   });
 });
