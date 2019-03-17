@@ -1,7 +1,7 @@
 {
-  "name": "lyef-react-component",
-  "version": "1.1.2",
-  "description": "An opinionated boilerplate for reusable and declouped react components.",
+  "name": "vs-react-full-header",
+  "version": "1.0.0",
+  "description": "A full header component created with React and developed with Storyboard.",
   "main": "dist/Main.js",
   "scripts": {
     "build": "npm run clean && npm run babel && npm run minify",
@@ -28,23 +28,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lyef/lyef-react-component.git"
+    "url": "git+ssh://git@github.com:vitorjsls30/react-full-header.git"
   },
+  "homepage": "https://github.com/vitorjsls30/react-full-header#README",
   "keywords": [
     "react",
     "component",
     "base"
   ],
-  "author": "lyef (http://lyef.github.io/)",
+  "author": "Vitor Sacramento (https://github.com/vitorjsls30)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lyef/lyef-react-component/issues"
-  },
-  "homepage": "https://github.com/lyef/lyef-react-component#README",
   "devDependencies": {
     "@personare/react-storybook-decorator-github-corner": "^0.1.4",
     "@storybook/react": "^3.1.5",
     "@storybook/storybook-deployer": "^2.0.0",
+    "assert-equal-jsx": "^1.0.3",
     "babel-cli": "^6.11.4",
     "babel-core": "^6.10.4",
     "babel-eslint": "^7.2.3",
@@ -52,8 +50,8 @@
     "babel-preset-airbnb": "^2.0.0",
     "babel-register": "^6.24.1",
     "chai": "^3.5.0",
-    "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.0",
+    "chai-enzyme": "^0.8.0",
+    "enzyme": "^2.9.1",
     "eslint": "^2.13.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.12.0",
@@ -64,7 +62,7 @@
     "mocha": "^2.5.3",
     "nyc": "^7.0.0",
     "raw-loader": "^0.5.1",
-    "react-test-renderer": "^16.0.0",
+    "react-test-renderer": "^15.6.1",
     "rimraf": "^2.5.3",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
@@ -73,7 +71,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }
