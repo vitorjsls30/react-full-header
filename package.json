@@ -1,7 +1,7 @@
 {
-  "name": "react-full-header",
-  "version": "0.0.1",
-  "description": "A full header component creted with React.",
+  "name": "vs-react-full-header",
+  "version": "1.0.0",
+  "description": "A full header component created with React and developed with Storyboard.",
   "main": "dist/Main.js",
   "scripts": {
     "build": "npm run clean && npm run babel && npm run minify",
@@ -30,6 +30,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com:vitorjsls30/react-full-header.git"
   },
+  "homepage": "https://github.com/vitorjsls30/react-full-header#README",
   "keywords": [
     "react",
     "component",
